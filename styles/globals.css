@@ -19,3 +19,15 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Tailwind Custom CSS to hide the scrollbar */
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Hides the scrollbar */
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;  /* For Firefox */
+  }
+}
